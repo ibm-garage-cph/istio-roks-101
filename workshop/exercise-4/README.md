@@ -7,7 +7,7 @@ An Ingress Gateway resource can be created to allow external requests through th
 ![](../README_images/withistio.svg)
 
 ### Expose the BookInfo app with Ingress Gateway
-
+1. Take a look at the `bookinfo-gateway.yaml` file and correct `<your-initials>` in the VirtualService section. This will ensure that your applications will receive their own custom URI prefix
 1. Configure the bookinfo default route with the Istio Ingress Gateway. 
 
     ```shell
@@ -16,14 +16,16 @@ An Ingress Gateway resource can be created to allow external requests through th
 
 2. Get the **ROUTE** of the Istio Ingress Gateway.
 
-    ```shell
-    oc get routes -n istio-system istio-ingressgateway
-    ```
-    Output:
-    ```shell
-    NAME                   HOST
+```shell
+oc get routes -n istio-system istio-ingressgateway
+```
+
+Output:
+
+```shell
+NAME                   HOST
 istio-ingressgateway   istio-ingressgateway-istio-system.rvennamocpcluster-c8427b5c054eb1823b50328ad3aeeb58-0000.us-south.containers.appdomain.cloud
-    ```
+```
 
 1. Make note of the HOST address that you retrieved in the previous step, as it will be used to access the BookInfo app in later parts of the course. Create an environment variable called $INGRESS_HOST with your address.
 
@@ -34,7 +36,7 @@ export INGRESS_HOST=istio-ingressgateway-istio-system.rvennamocpcluster-c8427b5c
 
 Congratulations! You extended the base Ingress features by providing a DNS entry to the Istio service.
 
-Visit the application by going to `http://<INGRESS_HOST>/productpage` in a new tab. If you keep hitting Refresh, you should see different versions of the page in random order (v1, v2, v3).
+Visit the application by going to `http://<INGRESS_HOST>/<your-initials>/productpage` in a new tab. If you keep hitting Refresh, you should see different versions of the page in random order (v1, v2, v3).
 
 ![](../README_images/bookinfo.png)
 
