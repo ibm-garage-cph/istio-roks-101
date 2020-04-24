@@ -18,7 +18,7 @@
   - Kiali Operator
   - Red Hat OpenShift Service Mesh Operator
   
-  <sup><sub>More information about installing istio on Openshift 4.3 [here](https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_install/installing-ossm.html) <\sub><\sup>
+  _More information about installing istio on Openshift 4.3 [here](https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_install/installing-ossm.html)_
   
   
 6. Click on **Installed Operators** and refresh the page to see the changes.
