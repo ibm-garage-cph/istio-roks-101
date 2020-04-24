@@ -20,7 +20,7 @@
   
 5. Click on **Installed Operators** and refresh the page to see the changes.
 
-  _Click [here](https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_install/installing-ossm.html)_ for more details about installing istio on Openshift 4.3 
+    _Click [here](https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_install/installing-ossm.html) for more details about installing istio on Openshift 4.3_
 
 ## Deploying the Red Hat OpenShift Service Mesh control plane
 
