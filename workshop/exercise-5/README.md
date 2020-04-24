@@ -23,6 +23,8 @@ for i in {1..20}; do sleep 0.5; curl $INGRESS_HOST/productpage; done
 
 1. Navigate to your cluster in the [IBM Cloud Dashboard](https://cloud.ibm.com/kubernetes/clusters)
 2. Click on your cluster and launch **OpenShift web console**
+2. Select the `Administrator` view (if not already selected) 
+2. Select the `istio-system` project (if not already selected)
 4. Under **Networking** -> **Routes**, select the URL next to **grafana**
 3. Click on Home -> Istio -> Istio Service Dashboard.
 4. Select `bookinfo` in the Service drop down.
