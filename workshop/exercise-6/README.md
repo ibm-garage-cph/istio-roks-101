@@ -18,7 +18,7 @@ A/B testing is a method of performing identical tests against two separate servi
 #### Label the versions
 
 ```shell
-kubectl create -f destination-rule-all.yaml
+oc apply -f destination-rule-all.yaml
 ```
 Let's examine the rule:
 ```yaml
@@ -45,7 +45,7 @@ spec:
 
 Next, apply the VirtualService
 ```shell
-kubectl create -f virtual-service-all-v1.yaml
+oc apply -f virtual-service-all-v1.yaml
 ```
 Let's examine the rule:
 ```yaml
@@ -80,7 +80,7 @@ You should only get the v1 of the BookInfo application - No stars for ratings
 To enable the Istio service mesh for A/B testing against the new service version, modify the original `VirtualService` rule:
 
 ```shell
-kubectl replace -f virtual-service-firefox.yaml
+oc replace -f virtual-service-firefox.yaml
 ```
 Let's examine the rule:
 ```yaml
@@ -116,7 +116,7 @@ In `Canary Deployments`, newer versions of services are incrementally rolled out
 #### Send 80% of traffic to v1
 
 ```shell
-kubectl replace -f virtual-service-reviews-80-20.yaml
+oc replace -f virtual-service-reviews-80-20.yaml
 ```
 Let's examine the rule:
 ```yaml
@@ -148,7 +148,7 @@ View the bookinfo application using the `$INGRESS_HOST` specified in [Exercise 5
 Route all traffic to v3 with a new VirtualService rule:
 
 ```shell
-cat <<EOF | kubectl replace -f -
+cat <<EOF | oc replace -f -
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
@@ -180,4 +180,4 @@ Depending on whether a service handles [HTTP](https://istio.io/docs/reference/co
 
 
 
-#### [Continue to Exercise 7 - Security](../exercise-7/README.md)
+#### End of Exercise 

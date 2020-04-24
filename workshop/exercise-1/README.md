@@ -1,4 +1,6 @@
-# Create account and get cluster
+# Create account and get cluster (Do not do this in the bootcamp)
+
+[In the bootcamp go to exercise 3](../exercise-3/README.md)
 
 In this section, you will login to your own IBM Cloud account, and then get access to a IBM Cloud Lab account which contains pre-provisioned clusters. Each lab attendee will be granted access to one cluster.
 

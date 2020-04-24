@@ -1,4 +1,6 @@
-# Exercise 2 - Installing Istio on IBM Cloud Kubernetes Service
+# Exercise 2 - Installing Istio on IBM Cloud Kubernetes Service (Do not do this in the bootcamp)
+
+[In the bootcamp go to exercise 3](../exercise-3/README.md)
 
 
 ## Install the Operator

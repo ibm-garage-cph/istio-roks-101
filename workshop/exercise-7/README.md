@@ -1,4 +1,4 @@
-# Exercise 7 - Secure your services 
+# Exercise 7 - Secure your services (Do not do this in the bootcamp)
 
 ## Mutual authentication with Transport Layer Security (mTLS)
 
@@ -29,7 +29,7 @@ When Envoy proxies establish a connection, they exchange and validate certificat
 1.  To configure mTLS, we need to modify our previous destination rules to use ISTIO_MUTUAL. 
 
 ```shell
-kubectl replace -f destination-rule-all-mtls.yaml
+oc replace -f destination-rule-all-mtls.yaml
 ```
 
 2. Send more traffic to your application. Everything should still continue to work as expected.
@@ -62,12 +62,12 @@ kubectl replace -f destination-rule-all-mtls.yaml
 
 3. Create a Kubernetes secret to hold the server’s certificate and private key. Use kubectl to create the secret istio-ingressgateway-certs in namespace istio-system.
     ```
-    kubectl create -n istio-system secret tls istio-ingressgateway-certs --key ingGW.key --cert ingGW.crt
+    oc create -n istio-system secret tls istio-ingressgateway-certs --key ingGW.key --cert ingGW.crt
     ```
 
 4. Delete the ingress gateway pod and force the ingress gateway pod to restart and reload key and certificate
     ```
-    kubectl delete pod -l app=istio-ingressgateway -n istio-system
+    oc delete pod -l app=istio-ingressgateway -n istio-system
     ```
 
 ### Create a secure Route to the Ingress Gateway
