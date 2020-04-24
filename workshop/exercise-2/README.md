@@ -8,17 +8,17 @@
 
 1. Navigate to your cluster in the [IBM Cloud Dashboard](https://cloud.ibm.com/kubernetes/clusters)
 
-2. Click on your cluster and Launch **OpenShift web console**
+1. Click on your cluster and Launch **OpenShift web console**
 
-3. Select **Administrator** in the drop down and then select **Operators** -> **OperatorHub**
+1. Select **Administrator** in the drop down and then select **Operators** -> **OperatorHub**
 
 1. Install the following operators, in order:
- - Elasticsearch Operator
- - Jaeger Operator
- - Kiali Operator
- - Red Hat OpenShift Service Mesh Operator
+  - Elasticsearch Operator
+  - Jaeger Operator
+  - Kiali Operator
+  - Red Hat OpenShift Service Mesh Operator
   
-  More information: `https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_install/installing-ossm.html`
+  <sup><sub>More information about installing istio on Openshift 4.3 [here](https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_install/installing-ossm.html) <\sub><\sup>
   
   
 6. Click on **Installed Operators** and refresh the page to see the changes.
