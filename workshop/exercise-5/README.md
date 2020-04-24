@@ -27,7 +27,7 @@ for i in {1..20}; do sleep 0.5; curl $INGRESS_HOST/<your initials>/productpage; 
 2. Select the `istio-system` project (if not already selected)
 4. Under **Networking** -> **Routes**, select the URL next to **grafana**
 3. Click on Home -> Istio -> Istio Service Dashboard.
-4. Select `bookinfo` in the Service drop down.
+4. Select `bookinfo-<your-initials>` in the Service drop down.
 
 ![](../README_images/bookinfo-grafana.png)
 
