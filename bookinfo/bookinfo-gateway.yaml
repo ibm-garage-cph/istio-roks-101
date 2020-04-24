@@ -35,13 +35,9 @@ spec:
   http:
     - match:
         - uri:
-            exact: /productpage
-        - uri:
-            exact: /login
-        - uri:
-            exact: /logout
-        - uri:
-            prefix: /api/v1/products
+            prefix: /<your-initials>/
+      rewrite:
+         uri: /
       route:
         - destination:
             host: productpage
