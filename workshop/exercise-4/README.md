@@ -35,6 +35,16 @@ Example:
 export INGRESS_HOST=istio-ingressgateway-istio-system.rvennamocpcluster-c8427b5c054eb1823b50328ad3aeeb58-0000.us-south.containers.appdomain.cloud
 ```
 
+Example:
+```
+export INGRESS_HOST=istio-ingressgateway-istio-system.rvennamocpcluster-c8427b5c054eb1823b50328ad3aeeb58-0000.us-south.containers.appdomain.cloud
+```
+
+_or for windows:_
+```
+set INGRESS_HOST=istio-ingressgateway-istio-system.rvennamocpcluster-c8427b5c054eb1823b50328ad3aeeb58-0000.us-south.containers.appdomain.cloud
+```
+
 Congratulations! You extended the base Ingress features by providing a DNS entry to the Istio service.
 
 Visit the application by going to `http://<INGRESS_HOST>/<your-initials>/productpage` in a new tab. If you keep hitting Refresh, you should see different versions of the page in random order (v1, v2, v3).
