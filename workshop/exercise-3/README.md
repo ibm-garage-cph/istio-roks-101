@@ -39,7 +39,7 @@ In Kubernetes, a sidecar is a utility container in the pod, and its purpose is t
 ## Clone application source repo
 
 ```shell
-git clone https://github.com/istio-roks-101/istio-roks-101
+git clone https://github.com/ibm-garage-cph/istio-roks-101
 cd istio-roks-101/bookinfo
 ```
 
